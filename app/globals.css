@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+@layer components {
+  .territory-tile {
+    @apply border border-gray-400 transition-colors duration-200;
+  }
+}
