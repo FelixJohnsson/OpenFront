@@ -1,9 +1,12 @@
 import "./globals.css";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "OpenFront - Territorial Conquest Game",
+  title: "OpenFront - Strategic Territory Game with Neural AI",
   description:
-    "A multiplayer territorial conquest game inspired by territorial.io",
+    "A strategic territory control game with neural network AI learning capabilities",
 };
 
 export default function RootLayout({
@@ -13,8 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <main className="min-h-screen flex flex-col">{children}</main>
+      <body className={inter.className}>
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );
